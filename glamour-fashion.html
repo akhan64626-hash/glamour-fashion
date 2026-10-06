@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glamour Fashion | Baghaula</title>
+<meta name="description" content="Baghaula Chauraha ki Glamour Fashion: ladies wear, kids wear, readymade garments, crockery, hand bags aur gifts. Google par 4.9 rating.">
+<style>
+:root{--plum:#4a1535;--rose:#c2185b;--gold:#e0a526;--cream:#fdf6ee;--ink:#2a1020;--muted:#76606c;--line:#ecdfd3;--green:#1f9d57}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;padding-bottom:84px}
+.wrap{max-width:720px;margin:auto;padding:0 20px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15}
+
+.hero{background:var(--plum);color:#fff;padding-bottom:34px;position:relative;overflow:hidden}
+.fabric{display:flex;height:16px}
+.fabric span{flex:1}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;max-width:720px;margin:auto}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:1.1rem;letter-spacing:.5px;color:var(--gold)}
+.status{font-size:.8rem;font-weight:700;padding:5px 12px;border-radius:99px;background:#e3f5ea;color:var(--green)}
+.status.closed{background:#fbe6e4;color:#c0392b}
+.hero h1{font-size:2.6rem;font-weight:700;letter-spacing:-1px;margin-top:10px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{margin-top:14px;max-width:32ch;opacity:.9;font-size:1.05rem}
+.stars{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:rgba(255,255,255,.12);padding:8px 16px;border-radius:99px}
+.stars b{color:var(--gold);font-size:1.2rem}
+.cta{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:0;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.line{border:2px solid #fff;color:#fff}
+.btn.dark{background:var(--plum);color:#fff}
+
+section{padding:42px 0}
+section h2{font-size:1.7rem;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:20px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 14px;display:flex;flex-direction:column;justify-content:space-between;min-height:128px;border-top:5px solid var(--c)}
+.tile h3{font-size:1.05rem}
+.tile p{font-size:.85rem;color:var(--muted);margin-top:4px}
+.tile button{margin-top:12px;align-self:flex-start;background:none;border:0;color:var(--rose);font-weight:700;font-size:.9rem;cursor:pointer;padding:0;font-family:inherit}
+
+.band{background:var(--plum);color:#fff}
+.band .sub{color:#d9c3cf}
+.why{list-style:none}
+.why li{padding:14px 0;border-bottom:1px solid #6b2a52;display:flex;gap:12px}
+.why li:last-child{border:0}
+.why b{color:var(--gold)}
+.big{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.big strong{font-family:Georgia,serif;font-size:3.2rem;color:var(--gold)}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.row:last-of-type{border:0}
+.row b{min-width:78px}
+label{display:block;font-weight:700;margin:12px 0 6px;font-size:.92rem}
+input,textarea{width:100%;padding:12px;border:1.5px solid #dccfc3;border-radius:10px;font:inherit;background:var(--cream);color:var(--ink)}
+input:focus,textarea:focus{outline:3px solid var(--gold);border-color:var(--plum)}
+.wa-btn{background:var(--green);color:#fff;width:100%;margin-top:16px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 20px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,246,238,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.bar a{flex:1;text-align:center;padding:13px 6px;border-radius:12px;text-decoration:none;font-weight:700;color:#fff}
+.b1{background:var(--rose)}.b2{background:var(--green)}.b3{background:var(--plum)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media(min-width:600px){.hero h1{font-size:3.5rem}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="fabric" aria-hidden="true">
+    <span style="background:#c2185b"></span><span style="background:#e0a526"></span><span style="background:#2e9e8a"></span><span style="background:#6a3fa0"></span><span style="background:#ee7b30"></span><span style="background:#e87fa6"></span><span style="background:#1f5fbf"></span>
+  </div>
+  <div class="top">
+    <span class="logo">GLAMOUR FASHION</span>
+    <span class="status" id="status">Shaam 7:30 tak</span>
+  </div>
+  <div class="wrap">
+    <h1>Style bhi, <em>bharosa</em> bhi.</h1>
+    <p>Baghaula Chauraha par kapde, bachchon ki dress, hand bag, crockery aur gifts, sab ek hi dukaan me.</p>
+    <div class="stars"><b>4.9 &#9733;</b><span>77 customers ki rating</span></div>
+    <div class="cta">
+      <a class="btn gold" href="tel:+919598141406">Abhi call karein</a>
+      <a class="btn line" href="#kya">Kya milta hai</a>
+    </div>
+  </div>
+</div>
+
+<section id="kya">
+  <div class="wrap">
+    <h2>Dukaan me kya milta hai</h2>
+    <p class="sub">Kisi par tap karein, seedha WhatsApp par poochh sakte hain.</p>
+    <div class="grid" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="big"><strong>4.9</strong><span>Google rating, 77 reviews</span></div>
+    <h2>Log yahan kyun aate hain</h2>
+    <p class="sub">Customers ne dukaan ko Google par bahut pasand kiya hai.</p>
+    <ul class="why">
+      <li><b>1</b><span>Ek hi jagah par ladies, kids aur gift ka saaman</span></li>
+      <li><b>2</b><span>Rang-birangi badi range, shelves bhari hui</span></li>
+      <li><b>3</b><span>Call ya WhatsApp par pehle hi pooch lein</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Dukaan par aayein</h2>
+    <p class="sub">Baghaula Chauraha par.</p>
+    <div class="card">
+      <div class="row"><b>Pata</b><span>Chauraha, Baghaula, Uttar Pradesh 229128</span></div>
+      <div class="row"><b>Samay</b><span>Shaam 7:30 baje tak khuli</span></div>
+      <div class="row"><b>Phone</b><a href="tel:+919598141406">+91 95981 41406</a></div>
+      <a class="btn dark" style="margin-top:14px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Glamour+Fashion+Chauraha+Baghaula+Uttar+Pradesh">Google Maps kholein</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Pasand bhejein</h2>
+    <p class="sub">Naam aur kya chahiye likhein, WhatsApp par seedha dukaan tak pahunchega.</p>
+    <div class="card">
+      <label for="nm">Aapka naam</label>
+      <input id="nm" autocomplete="name">
+      <label for="it">Kya chahiye</label>
+      <textarea id="it" rows="3" placeholder="Jaise: bachche ki dress, 5 saal"></textarea>
+      <button class="btn wa-btn" id="send" type="button">WhatsApp par bhejein</button>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; Glamour Fashion, Baghaula<br>Website banane wale: [Aapka Naam / Number]</footer>
+
+<nav class="bar" aria-label="Sampark">
+  <a class="b1" href="tel:+919598141406">Call</a>
+  <a class="b2" id="waBar" href="#" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="b3" href="https://www.google.com/maps/search/?api=1&query=Glamour+Fashion+Chauraha+Baghaula+Uttar+Pradesh" target="_blank" rel="noopener">Raasta</a>
+</nav>
+
+<script>
+var PHONE="919598141406";
+var OPEN_H=9; // dukaan kab khulti hai (24 ghante), dukaandaar se pooch kar badlein
+var cats=[
+ ["Ladies Wear","Suit, kurti, saree aur aur bhi","#c2185b"],
+ ["Kids Wear","Bachchon ki dress, har size","#e0a526"],
+ ["Readymade Garments","Tayyar kapde, har mauke ke liye","#2e9e8a"],
+ ["Hand Bags","Roz ke aur khaas mauke ke bag","#6a3fa0"],
+ ["Crockery Sets","Ghar aur gift ke liye","#ee7b30"],
+ ["Teddy &amp; Gifts","Teddy bear aur tohfe","#e87fa6"]
+];
+function wa(t){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)}
+var box=document.getElementById("tiles");
+cats.forEach(function(c){
+  var d=document.createElement("div");d.className="tile";d.style.setProperty("--c",c[2]);
+  d.innerHTML="<div><h3>"+c[0]+"</h3><p>"+c[1]+"</p></div><button type='button'>WhatsApp par poochein &rarr;</button>";
+  var name=c[0].replace("&amp;","aur");
+  d.querySelector("button").onclick=function(){window.open(wa("Namaste, mujhe "+name+" ke baare me jaankari chahiye."),"_blank")};
+  box.appendChild(d);
+});
+document.getElementById("send").onclick=function(){
+  var n=document.getElementById("nm").value.trim(), t=document.getElementById("it").value.trim();
+  window.open(wa("Namaste, main "+(n||"ek customer")+" hun. Mujhe chahiye: "+(t||"jaankari")),"_blank");
+};
+document.getElementById("waBar").href=wa("Namaste, mujhe jaankari chahiye.");
+(function(){
+  var d=new Date(),h=d.getHours(),m=d.getMinutes(),s=document.getElementById("status");
+  var open=h>=OPEN_H&&(h<19||(h===19&&m<30));
+  if(open){s.textContent="Abhi khuli hai"}else{s.textContent="Abhi band hai";s.classList.add("closed")}
+})();
+</script>
+</body>
+</html>
